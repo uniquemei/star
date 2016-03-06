@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/life_item_img_contanier"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/life_item_img"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pay_wx" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/life_item_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@id/life_item_img_contanier"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:text="你好，你好"
+        android:textSize="@dimen/normalbig_size" />
+
+    <TextView
+        android:id="@+id/life_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:text="2015-10-21"
+        android:textSize="@dimen/normal_size" />
+
+</RelativeLayout>

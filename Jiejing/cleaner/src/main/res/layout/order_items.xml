@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:textSize="@dimen/smallbig_size">
+
+        <TextView
+            android:id="@+id/order_uid_name"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="类型："
+            android:textSize="@dimen/smallbig_size" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/order_cleanerid"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="人员编号："
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:textSize="@dimen/smallbig_size">
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="时间：" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="地点："
+        android:textSize="@dimen/smallbig_size" />
+
+    <RelativeLayout
+        android:id="@+id/contanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:id="@+id/call_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/login_btn"
+            android:text="联系客户"
+            android:textSize="@dimen/smallbig_size" />
+
+        <Button
+            android:id="@+id/accept_order"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_btn"
+            android:text="接单"
+            android:visibility="gone"
+            android:textSize="@dimen/smallbig_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

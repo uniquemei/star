@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">星星佳洁</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_all_type">AllTypeAct</string>
+    <string name="title_activity_order_item">OrderItemAct</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="title_activity_main_order_place">MainOrderPlaceAct</string>
+    <string name="title_activity_main_order_map">MainOrderMapAct</string>
+    <string name="title_activity_add_common_place">AddCommonPlaceActivity</string>
+    <string name="title_activity_dao_hang">DaoHangActivity</string>
+    <string name="title_activity_main_order_time">MainOrderTimeAct</string>
+
+
+    <!-- 时间选择器日期 -->
+    <string-array name="time_picker_date">
+        <item>今天</item>
+        <item>明天</item>
+        <item>后天</item>
+    </string-array>
+    <string name="title_activity_my_order_comment">MyOrderCommentAct</string>
+    <string name="title_activity_cleaner_detail">CleanerDetailAct</string>
+    <string name="title_activity_change">ChangeActivity</string>
+    <string name="title_activity_cleaner_list">CleanerListActivity</string>
+
+
+</resources>

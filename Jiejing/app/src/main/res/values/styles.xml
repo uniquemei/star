@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="type_title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@color/yellow2</item>
+    </style>
+<!--    <item name="android:listSelector">@color/type_title</item>
+-->
+    <style name="grid_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:columnWidth">120dp</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:horizontalSpacing">10dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:numColumns">4</item>
+        <item name="android:verticalSpacing">10dp</item>
+    </style>
+    <style name="user_center_button">
+        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#fff</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawableRight">@mipmap/order_interduce</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="user_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="orderInfo_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="mypopWindow">
+        <item name="android:windowEnterAnimation">@anim/headimage_enter</item>
+        <item name="android:windowExitAnimation">@anim/headimage_out</item>
+    </style>
+
+    <style name="popwindow_animal_style">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_hidden</item>
+    </style>
+
+    <!--<style name="timepopwindow_anim_style">-->
+        <!--<item name="android:windowEnterAnimation">@anim/timepicker_anim_enter_bottom</item> &lt;!&ndash; 指定显示的动画xml &ndash;&gt;-->
+        <!--<item name="android:windowExitAnimation">@anim/timepicker_anim_exit_bottom</item> &lt;!&ndash; 指定消失的动画xml &ndash;&gt;-->
+    <!--</style>-->
+
+
+    <style name="ChannelBTStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/login_bt_select</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

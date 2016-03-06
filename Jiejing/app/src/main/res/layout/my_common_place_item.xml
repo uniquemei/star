@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <TextView
+           android:layout_marginLeft="15dp"
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="北京大苑快捷酒店"
+            android:textSize="@dimen/normal_size"
+            android:layout_weight="5" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_btn"
+            android:text="删除"
+            android:textColor="#fff"
+            android:textSize="@dimen/small_size" />
+    </LinearLayout>
+</RelativeLayout>

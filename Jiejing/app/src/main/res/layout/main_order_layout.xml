@@ -1,0 +1,375 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/title"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/backItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/abc_ic_ab_back_holo_light" />
+
+                <TextView
+                    android:id="@+id/itemNameTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="项目名称"
+                    android:textSize="@dimen/big_size" />
+
+                <ImageView
+                    android:id="@+id/itemDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/wallet_base_info_hover" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/priceIntroduce"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:paddingRight="15dp"
+                android:text="单次30元/小时" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/icon_order_time" />
+
+                    <FrameLayout
+                        android:id="@+id/confirmFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="60dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirmContanier"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingRight="20dp">
+
+                            <TextView
+                                android:id="@+id/confirmDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="10月10日"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/normal_size" />
+
+                            <TextView
+                                android:id="@+id/confirmTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="20dp"
+                                android:text="09:00"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/normal_size" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/confirmHint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:drawableRight="@mipmap/ebpay_pwdpay_next"
+                            android:gravity="center_vertical"
+                            android:hint="服务时间"
+                            android:textColorHint="@color/gray"
+                            android:paddingRight="15dp"
+                            android:textSize="@dimen/normal_size" />
+                        <!--                        android:drawableRight="@mipmap/ebpay_pwdpay_next_gray"
+                        -->
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/confirmTypeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#fff"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/confirmType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="数量："
+                        android:textSize="@dimen/smallbig_size" />
+
+                    <EditText
+                        android:id="@+id/confirmTypeNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="100dp"
+                        android:drawablePadding="100dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="15dp"
+                        android:hint="务必填写"
+                        android:textColor="@color/orange"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/smallbig_size"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:minWidth="200dp"
+                        android:textCursorDrawable="@null"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/confirmAddressRe"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/confirmCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="成都"
+                        android:textSize="@dimen/smallbig_size" />
+
+                    <TextView
+                        android:id="@+id/confirmArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="60dp"
+                        android:drawablePadding="100dp"
+                        android:drawableRight="@mipmap/ebpay_pwdpay_next"
+                        android:gravity="center_vertical"
+                        android:hint="服务地址（含门牌号）"
+                        android:onClick="setOrderPlace"
+                        android:textColorHint="@color/gray"
+                        android:paddingRight="15dp"
+                        android:textSize="@dimen/smallbig_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="备注"
+                    android:textSize="@dimen/smallbig_size" />
+
+                <EditText
+
+                    android:id="@+id/confirmRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:layout_marginRight="15dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/normal_size" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/confirmCleanercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="选择清洁工:"
+                    android:textSize="@dimen/smallbig_size" />
+
+                <TextView
+
+                    android:id="@+id/confirmCleanerId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_toRightOf="@+id/textView"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="（可不选，商家指派）"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/smallbig_size" />
+
+                <ImageView
+                    android:id="@+id/confirmNotChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/wallet_base_clear_normal" />
+
+            </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="40dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="常用清洁人员列表"
+        android:textSize="@dimen/normal_size" />
+
+    <Button
+        android:id="@+id/all_cleaner"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="全部人员列表"
+        android:paddingRight="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:textSize="@dimen/small_size" />
+</RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.fly.jiejing.units.NoScrollListView
+                    android:id="@+id/commonCleanerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/white"
+                    android:dividerHeight="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/commonCleanerList_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="没有收藏清洁人员" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/login_btn"
+        android:inputType="text"
+        android:onClick="submitOrder"
+        android:text="提交订单"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/normalbig_size"
+        android:textStyle="bold" />
+</RelativeLayout>

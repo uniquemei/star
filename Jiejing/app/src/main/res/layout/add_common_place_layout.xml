@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:id="@+id/addPlaceBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:onClick="backPlace"
+            android:paddingLeft="15dp"
+            android:src="@mipmap/abc_ic_ab_back_holo_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="服务地址"
+            android:textSize="@dimen/big_size" />
+
+        <TextView
+            android:id="@+id/addAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="确定"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/normalbig_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <EditText
+            android:id="@+id/add_select_street"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableLeft="@mipmap/regular_address_add_address"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="请选择您所在的小区"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/normalbig_size" />
+
+        <EditText
+            android:id="@+id/add_select_detail"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableLeft="@mipmap/regular_address_add_number"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:hint="请填写详细的门牌号"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/normalbig_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

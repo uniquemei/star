@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/common_user_backRelative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="生活"
+            android:textSize="@dimen/big_size" />
+
+        <TextView
+            android:id="@+id/Erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/smallbig_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/all_bg" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/all_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/three_radio1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/one_radiobtn"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/btn_radio"
+            android:textSize="@dimen/normal_size" />
+        <!--    android:text="菜谱"-->
+        <RadioButton
+            android:id="@+id/three_radio2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jianfei_radiobtn"
+            android:button="@null"
+            android:gravity="center"
+
+            android:textColor="@color/btn_radio"
+            android:textSize="@dimen/normal_size" />
+<!-- android:text="减肥"-->
+        <RadioButton
+            android:id="@+id/three_radio3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/miaozhao_radiobtn"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/btn_radio"
+            android:textSize="@dimen/normal_size" />
+
+        <RadioButton
+            android:id="@+id/three_radio4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jiankang_radiobtn"
+            android:button="@null"
+            android:gravity="center"
+
+            android:textColor="@color/btn_radio"
+            android:textSize="@dimen/normal_size" />
+
+
+    </RadioGroup>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/three_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

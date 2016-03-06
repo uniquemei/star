@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/cleaner_detail_userImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/cleaner_detail_comment_contanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cleaner_detail_userImg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cleaner_detail_userImg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cleaner_detail_commentuser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="用户：1836382****"
+            android:textSize="@dimen/normal_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/cleaner_detail_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评分：1"
+                android:textSize="@dimen/normal_size" />
+
+            <TextView
+                android:id="@+id/cleaner_detail_commenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="时间:"
+                android:textSize="@dimen/normal_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cleaner_detail_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cleaner_detail_comment_contanier"
+        android:layout_marginLeft="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/small_size" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- //下拉菜单样式
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color" />
+        <attr name="dddividerColor" format="color" />
+        <attr name="ddtextSelectedColor" format="color" />
+        <attr name="ddtextUnselectedColor" format="color" />
+        <attr name="ddmenuBackgroundColor" format="color" />
+        <attr name="ddmaskColor" format="color" />
+        <attr name="ddmenuTextSize" format="dimension" />
+        <attr name="ddmenuSelectedIcon" format="reference" />
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+    </declare-styleable>-->
+
+
+    //滚轮样式
+    <declare-styleable name="wheel">
+        <attr name="lineSplitHeight" format="reference|integer" />
+        <attr name="textColorFirst" format="reference|color" />
+        <attr name="textColorSecond" format="reference|color" />
+        <attr name="textColorThird" format="reference|color" />
+        <attr name="splitLineColor" format="reference|color" />
+        <attr name="textSize" format="reference|integer" />
+        <attr name="textGravity">
+            <flag name="left" value="-1" />
+            <flag name="center" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

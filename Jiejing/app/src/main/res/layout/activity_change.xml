@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/spbg03">
+    <RelativeLayout
+        android:id="@+id/changePwd_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/change_back_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/abc_ic_ab_back_holo_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码修改"
+            android:textSize="@dimen/normalbig_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/change_asd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changePwd_title"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/change_etPhone_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:drawableLeft="@mipmap/user_img"
+            android:hint="11位手机号"
+            android:phoneNumber="true"
+            android:textColor="@color/black"
+            android:textColorHint="#fff"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+            <EditText
+                android:id="@+id/chaneg_etEnsure_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/imgver_login_img"
+                android:hint="验证码"
+                android:phoneNumber="true"
+                android:textColor="@color/black"
+                android:textColorHint="#fff"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/change_btn_send"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/register_btn"
+                android:textSize="@dimen/normal_size"
+                android:text="发送验证码"
+                android:textColor="#Da70d6" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/change_etPwd_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:drawableLeft="@mipmap/password_img"
+            android:hint="6-16位字母和数字的密码"
+            android:password="true"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#fff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_asd2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_btn"
+        android:text="确定"
+        android:textColor="@color/little_red" />
+
+</RelativeLayout>
